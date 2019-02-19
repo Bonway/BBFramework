@@ -16,8 +16,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    if (indexPath.row == 0) {
+        NSLog(@"mvc");
+    }
+    
+    
+    
+}
 
 @end
