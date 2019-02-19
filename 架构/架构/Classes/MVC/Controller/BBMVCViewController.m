@@ -7,16 +7,39 @@
 //
 
 #import "BBMVCViewController.h"
+#import "BBMVCModel.h"
+#import "BBMVCView.h"
 
 @interface BBMVCViewController ()
+
+@property (strong, nonatomic) BBMVCModel *bbModel;
+@property (strong, nonatomic) BBMVCView *bbView;
 
 @end
 
 @implementation BBMVCViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.view addSubview:self.bbView];
+    
+    [self printData];
+    
+}
+
+- (BBMVCView *)bbView {
+    if (!_bbView) {
+        _bbView = [BBMVCView new];
+        _bbView.frame = self.view.frame;
+        _bbView.backgroundColor = [UIColor redColor];
+    }
+    return _bbView;
+}
+- (void)printData {
+    
+    _bbView.model.content = @"print";
 }
 
 /*

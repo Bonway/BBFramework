@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BBMVCModel : NSObject
 
+@property(copy, nonatomic)NSString *content;
+
 @end
 
 NS_ASSUME_NONNULL_END

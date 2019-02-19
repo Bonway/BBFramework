@@ -29,7 +29,7 @@
     
     
     if (indexPath.row == 0) {
-        NSLog(@"mvc");
+        [self.navigationController pushViewController:[BBMVCViewController new] animated:YES];
     }
     
     

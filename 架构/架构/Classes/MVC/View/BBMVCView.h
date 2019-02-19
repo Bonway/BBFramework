@@ -8,9 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@class BBMVCModel;
+
 NS_ASSUME_NONNULL_BEGIN
 
+
+@protocol BBMVCViewDelegate <NSObject>
+
+- (void)onPrintBtnClick;
+
+@end
+
 @interface BBMVCView : UIView
+
+@property(strong, nonatomic)BBMVCModel *model;
+
+@property(nonatomic) id <BBMVCViewDelegate> delegate;
 
 @end
 

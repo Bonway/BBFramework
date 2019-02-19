@@ -98,11 +98,11 @@
 		CFEE3D81221BEB0A009525AC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CFEE3D82221BEB0A009525AC /* AppDelegate.h */,
-				CFEE3D83221BEB0A009525AC /* ViewController.m */,
 				CFEE3D84221BEB0A009525AC /* main.m */,
+				CFEE3D82221BEB0A009525AC /* AppDelegate.h */,
 				CFEE3D85221BEB0A009525AC /* AppDelegate.m */,
 				CFEE3D86221BEB0A009525AC /* ViewController.h */,
+				CFEE3D83221BEB0A009525AC /* ViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
