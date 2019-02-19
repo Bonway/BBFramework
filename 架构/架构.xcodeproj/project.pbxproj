@@ -13,6 +13,9 @@
 		CFEE3D87221BEB0A009525AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEE3D83221BEB0A009525AC /* ViewController.m */; };
 		CFEE3D88221BEB0A009525AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEE3D84221BEB0A009525AC /* main.m */; };
 		CFEE3D89221BEB0A009525AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEE3D85221BEB0A009525AC /* AppDelegate.m */; };
+		CFEE3D8F221BF45B009525AC /* BBMVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEE3D8E221BF45B009525AC /* BBMVCViewController.m */; };
+		CFEE3D92221BF487009525AC /* BBMVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEE3D91221BF487009525AC /* BBMVCView.m */; };
+		CFEE3D95221BF4A7009525AC /* BBMVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEE3D94221BF4A7009525AC /* BBMVCModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		CFEE3D84221BEB0A009525AC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CFEE3D85221BEB0A009525AC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CFEE3D86221BEB0A009525AC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CFEE3D8D221BF45B009525AC /* BBMVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMVCViewController.h; sourceTree = "<group>"; };
+		CFEE3D8E221BF45B009525AC /* BBMVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMVCViewController.m; sourceTree = "<group>"; };
+		CFEE3D90221BF487009525AC /* BBMVCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMVCView.h; sourceTree = "<group>"; };
+		CFEE3D91221BF487009525AC /* BBMVCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMVCView.m; sourceTree = "<group>"; };
+		CFEE3D93221BF4A7009525AC /* BBMVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMVCModel.h; sourceTree = "<group>"; };
+		CFEE3D94221BF4A7009525AC /* BBMVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMVCModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +88,9 @@
 		CFEE3D7F221BE7A2009525AC /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				CFEE3D8C221BF082009525AC /* View */,
+				CFEE3D8B221BF07B009525AC /* Model */,
+				CFEE3D8A221BF071009525AC /* Controller */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -93,6 +105,33 @@
 				CFEE3D86221BEB0A009525AC /* ViewController.h */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		CFEE3D8A221BF071009525AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE3D8D221BF45B009525AC /* BBMVCViewController.h */,
+				CFEE3D8E221BF45B009525AC /* BBMVCViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CFEE3D8B221BF07B009525AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE3D93221BF4A7009525AC /* BBMVCModel.h */,
+				CFEE3D94221BF4A7009525AC /* BBMVCModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFEE3D8C221BF082009525AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE3D90221BF487009525AC /* BBMVCView.h */,
+				CFEE3D91221BF487009525AC /* BBMVCView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFEE3D88221BEB0A009525AC /* main.m in Sources */,
+				CFEE3D8F221BF45B009525AC /* BBMVCViewController.m in Sources */,
+				CFEE3D95221BF4A7009525AC /* BBMVCModel.m in Sources */,
 				CFEE3D87221BEB0A009525AC /* ViewController.m in Sources */,
 				CFEE3D89221BEB0A009525AC /* AppDelegate.m in Sources */,
+				CFEE3D92221BF487009525AC /* BBMVCView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

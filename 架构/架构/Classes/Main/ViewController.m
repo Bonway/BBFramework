@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "BBMVCViewController.h"
+
 @interface ViewController ()
 
 @end
