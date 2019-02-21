@@ -10,7 +10,7 @@
 #import "BBMVCModel.h"
 #import "BBMVCView.h"
 
-@interface BBMVCViewController ()
+@interface BBMVCViewController ()<BBMVCViewDelegate>
 
 @property (strong, nonatomic) BBMVCModel *bbModel;
 @property (strong, nonatomic) BBMVCView *bbView;
@@ -33,6 +33,7 @@
     if (!_bbView) {
         _bbView = [BBMVCView new];
         _bbView.frame = self.view.frame;
+        _bbView.delegate = self;
         _bbView.backgroundColor = [UIColor redColor];
     }
     return _bbView;
@@ -42,14 +43,9 @@
     _bbView.model.content = @"print";
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)onPrintBtnClick {
+    NSLog(@"%@", [NSString stringWithFormat:@"line %u", arc4random() % 10]);
 }
-*/
+
 
 @end
